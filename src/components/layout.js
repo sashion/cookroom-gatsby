@@ -13,10 +13,10 @@ import Header from "./header"
 import "./layout.css"
 
 const moreLinks = [
-  { text: "Impressum", url: "impressum" },
+  { text: "Impressum", url: "/impressum" },
   {
     text: "Datenschutz",
-    url: "datenschutz",
+    url: "/datenschutz",
   },
   {
     text: "Kontakt",
