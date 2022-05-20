@@ -44,12 +44,16 @@ body {
   margin: 0;
   word-wrap: break-word;
   /* background: #FAFAFA */
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .content {
   width: 100%;
   max-width: var(--size-content);
   padding: 10px;
   margin: auto;
+  flex-grow: 1;
 }
 .content-fullwidth {
   width: 100%

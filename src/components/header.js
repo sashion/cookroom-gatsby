@@ -22,10 +22,10 @@ const Header = ({ siteTitle }) => (
     >
       <StaticImage
         src="../images/cookroom.svg"
-        loading="eager"
+        // loading="eager"
         width={100}
         quality={95}
-        formats={["auto", "webp", "avif"]}
+        formats={["auto", "webp", "avif", "svg"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
