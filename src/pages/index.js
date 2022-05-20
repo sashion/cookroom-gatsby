@@ -102,7 +102,7 @@ Ab 8 Personen bieten wir Ihnen Ihren individuellen Kochkurs zum Wunschthema und 
             >
               {link.text} ↗
             </a>
-            <p className={styles.listItemDescription}>{link.description}</p>
+            {/* <p className={styles.listItemDescription}>{link.description}</p> */}
           </li>
         ))}
       </ul>
