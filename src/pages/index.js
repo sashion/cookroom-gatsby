@@ -60,11 +60,27 @@ const IndexPage = () => (
     </div>
     <div className="content">
       <h1>
-        Willkommen im <b>Cookroom</b>
+      ERLEBEN SIE DEN COOKROOM.
       </h1>
       <p className={styles.intro}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus convallis leo ac mattis. Sed ut sem nec nunc euismod interdum. Sed ut nulla tellus. Nulla varius, orci vel dignissim elementum, orci orci sodales orci, non fermentum nisi risus pulvinar velit. Curabitur feugiat, libero cursus facilisis blandit, dui est pellentesque justo, quis gravida est tellus nec nunc. Etiam mi odio, egestas quis bibendum eget, volutpat eu metus. In hac habitasse platea dictumst. Pellentesque aliquam nec nisl at tristique. Nunc vitae nisi eget magna porta molestie ac at enim. Suspendisse sed semper augue. Vestibulum arcu nunc, vestibulum in posuere sed, porttitor eu leo.
-      </p>
+
+Im separaten Gebäude steht Ihnen eine hochwertige Eventküche zur Verfügung, in der die Kursteilnehmer in selbst kochen oder dem Profi über die Schulter schauen können.
+<br /><br />
+Für die Ausstattung der Küche zeichnete der Edeleinrichter Lukaszewitz aus Reutlingen verantwortlich. Jetzt steht Ihnen eine hochwertige Bulthaup B3 Küche mit innovativster Technik zur Verfügung.
+Küche und Essbereich sind eng miteinander verbunden, so dass die Kochschüler das selbst zubereitete Menü direkt genießen können. Der hübsche Außenbereich lädt zum Verweilen ein.
+<br /><br />
+Unter fachmännischer Anleitung und mit viel Spaß werden Sie das vorgegebene Menü zubereiten. Alle Kursteilnehmer werden nicht nur einen Gang des Menüs zubereiten, sondern alle Gänge von der Herstellung durchlaufen.
+<br /><br />
+Während des Kochkurses sind enthalten:
+<br />
+- Aperitif<br />
+- Mineralwasser<br />
+- Ein Glas korrespondierender Wein pro Gericht<br />
+- Kaffee, Espresso oder Cappuccino<br />
+- Rezepte<br />
+- Leihschürze<br /><br />
+
+Ab 8 Personen bieten wir Ihnen Ihren individuellen Kochkurs zum Wunschthema und -termin an.      </p>
       {/* <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
