@@ -11,19 +11,19 @@ const links = [
     text: "Cookroom light – Kochevents ohne Koch",
     url: "http://e1.h0t3l.de",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus convallis leo ac mattis. Sed ut sem nec nunc euismod interdum. Sed ut nulla tellus. ",
   },
   {
     text: "Cookroom - Kochevents mit Koch",
     url: "http://e2.h0t3l.de",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "Nulla varius, orci vel dignissim elementum, orci orci sodales orci, non fermentum nisi risus pulvinar velit",
   },
   {
     text: "Grillevents",
     url: "http://e3.h0t3l.de",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "Curabitur feugiat, libero cursus facilisis blandit, dui est pellentesque justo, quis gravida est tellus nec nunc. Etiam mi odio, egestas quis bibendum eget, volutpat eu metus. In hac habitasse platea dictumst.",
   },
 ]
 
@@ -61,25 +61,30 @@ const moreLinks = [
   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ]
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+const utmParameters = `?utm_source=cookroom&utm_medium=singlepage&utm_campaign=cookroom-reloaded`
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/Fleisch_01.jpg"
         loading="eager"
-        width={64}
+        // width={500}
         quality={95}
         formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
+        alt="Willkommen im Cookroom"
+        style={{ marginBottom: `var(--space-6)`, width: "100%" }}
       />
+    </div>
+    <div style={{ maxWidth: `var(--size-content)`, margin: 'auto' }}>
       <h1>
-        Welcome to <b>Cookroom! xxx 2 - Feature 1 :)</b>
+        Willkommen im <b>Cookroom</b>
       </h1>
       <p className={styles.intro}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus convallis leo ac mattis. Sed ut sem nec nunc euismod interdum. Sed ut nulla tellus. Nulla varius, orci vel dignissim elementum, orci orci sodales orci, non fermentum nisi risus pulvinar velit. Curabitur feugiat, libero cursus facilisis blandit, dui est pellentesque justo, quis gravida est tellus nec nunc. Etiam mi odio, egestas quis bibendum eget, volutpat eu metus. In hac habitasse platea dictumst. Pellentesque aliquam nec nisl at tristique. Nunc vitae nisi eget magna porta molestie ac at enim. Suspendisse sed semper augue. Vestibulum arcu nunc, vestibulum in posuere sed, porttitor eu leo.
+      </p>
+      {/* <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
@@ -89,27 +94,28 @@ const IndexPage = () => (
         ))}
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+      </p> */}
+      <ul className={styles.list}>
+        {links.map(link => (
+          <li key={link.url} className={styles.listItem}>
+            <a
+              className={styles.listItemLink}
+              href={`${link.url}${utmParameters}`}
+              target="_blank"
+            >
+              {link.text} ↗
+            </a>
+            <p className={styles.listItemDescription}>{link.description}</p>
+          </li>
+        ))}
+      </ul>
+      {/* {moreLinks.map((link, i) => (
+        <React.Fragment key={link.url}>
+          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+          {i !== moreLinks.length - 1 && <> · </>}
+        </React.Fragment>
+      ))} */}
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
   </Layout>
 )
 
