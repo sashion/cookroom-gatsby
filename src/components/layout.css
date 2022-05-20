@@ -45,6 +45,15 @@ body {
   word-wrap: break-word;
   /* background: #FAFAFA */
 }
+.content {
+  width: 100%;
+  max-width: var(--size-content);
+  padding: 10px;
+  margin: auto;
+}
+.content-fullwidth {
+  width: 100%
+}
 a {
   background-color: transparent;
   color: var(--color-primary);

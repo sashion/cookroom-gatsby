@@ -77,7 +77,7 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-6)`, width: "100%" }}
       />
     </div>
-    <div style={{ maxWidth: `var(--size-content)`, margin: 'auto' }}>
+    <div className="content">
       <h1>
         Willkommen im <b>Cookroom</b>
       </h1>
