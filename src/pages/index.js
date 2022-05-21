@@ -8,22 +8,22 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Cookroom light – Kochevents ohne Koch",
+    text: "Cookroom light - Kochevents ohne Koch",
     url: "http://e1.h0t3l.de",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus convallis leo ac mattis. Sed ut sem nec nunc euismod interdum. Sed ut nulla tellus. ",
+      "Buchen Sie exklusiv den Cookroom für private Feiern und kochen Sie gemeinsam mit Ihren Freunden oder Kollegen.",
   },
   {
     text: "Cookroom - Kochevents mit Koch",
     url: "http://e2.h0t3l.de",
     description:
-      "Nulla varius, orci vel dignissim elementum, orci orci sodales orci, non fermentum nisi risus pulvinar velit",
+      "Sie suchen eine außergewöhnliche Location als Kochevent mit einem professionellen Koch? Dann ist der Cookroom genau das Richtige für Sie.",
   },
   {
     text: "Grillevents",
     url: "http://e3.h0t3l.de",
     description:
-      "Curabitur feugiat, libero cursus facilisis blandit, dui est pellentesque justo, quis gravida est tellus nec nunc. Etiam mi odio, egestas quis bibendum eget, volutpat eu metus. In hac habitasse platea dictumst.",
+      "Fleisch ist Ihr Gemüse? Schauen Sie sich die Grillevents im Cookroom an.",
   },
 ]
 
@@ -49,9 +49,9 @@ const IndexPage = () => (
     <Seo title="Home" />
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/Fleisch_01.jpg"
+        src="../images/_MG_6182_Entzerrt.jpg"
         loading="eager"
-        // width={500}
+        width={1000}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="Willkommen im Cookroom"
@@ -63,24 +63,7 @@ const IndexPage = () => (
       ERLEBEN SIE DEN COOKROOM.
       </h1>
       <p className={styles.intro}>
-
-Im separaten Gebäude steht Ihnen eine hochwertige Eventküche zur Verfügung, in der die Kursteilnehmer in selbst kochen oder dem Profi über die Schulter schauen können.
-<br /><br />
-Für die Ausstattung der Küche zeichnete der Edeleinrichter Lukaszewitz aus Reutlingen verantwortlich. Jetzt steht Ihnen eine hochwertige Bulthaup B3 Küche mit innovativster Technik zur Verfügung.
-Küche und Essbereich sind eng miteinander verbunden, so dass die Kochschüler das selbst zubereitete Menü direkt genießen können. Der hübsche Außenbereich lädt zum Verweilen ein.
-<br /><br />
-Unter fachmännischer Anleitung und mit viel Spaß werden Sie das vorgegebene Menü zubereiten. Alle Kursteilnehmer werden nicht nur einen Gang des Menüs zubereiten, sondern alle Gänge von der Herstellung durchlaufen.
-<br /><br />
-Während des Kochkurses sind enthalten:
-<br />
-- Aperitif<br />
-- Mineralwasser<br />
-- Ein Glas korrespondierender Wein pro Gericht<br />
-- Kaffee, Espresso oder Cappuccino<br />
-- Rezepte<br />
-- Leihschürze<br /><br />
-
-Ab 8 Personen bieten wir Ihnen Ihren individuellen Kochkurs zum Wunschthema und -termin an.      </p>
+      Die kulinarische Eventlocation des Hotel Schönbuch </p>
       {/* <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
@@ -102,7 +85,7 @@ Ab 8 Personen bieten wir Ihnen Ihren individuellen Kochkurs zum Wunschthema und 
             >
               {link.text} ↗
             </a>
-            {/* <p className={styles.listItemDescription}>{link.description}</p> */}
+            <p className={styles.listItemDescription}>{link.description}</p>
           </li>
         ))}
       </ul>
