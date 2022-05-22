@@ -11,7 +11,7 @@ const links = [
     text: "Cookroom light - Kochevents ohne Koch",
     url: "http://e1.h0t3l.de",
     description:
-      "Buchen Sie exklusiv den Cookroom für private Feiern und kochen Sie gemeinsam mit Ihren Freunden oder Kollegen.",
+      "Buchen Sie exklusiv den Cookroom für private Feiern, Firmen- oder Teamevents und kochen Sie gemeinsam mit Ihren Freunden oder Kollegen.",
   },
   {
     text: "Cookroom - Kochevents mit Koch",
