@@ -69,7 +69,7 @@ const Layout = ({ children }) => {
             ))}
           </div>
           <div>
-          © {new Date().getFullYear()}
+          © 2011 - {new Date().getFullYear()}
           &middot;
           {` `}
           <a href="http://www.hotel-schoenbuch.de" target="_blank">Hotel Schönbuch</a>
